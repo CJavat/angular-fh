@@ -13,7 +13,16 @@ export class ListComponent {
   @Output()
   public onDelete: EventEmitter<number> = new EventEmitter();
 
+  @Output()
+  public OnDeleteById: EventEmitter<string> = new EventEmitter();
+
   public onDeleteCharacter(index: number): void {
     this.onDelete.emit(index);
+  }
+
+  public onDeleteCharacterById(id: string): void {
+    if (!id) return;
+
+    this.OnDeleteById.emit(id);
   }
 }

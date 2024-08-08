@@ -5,7 +5,7 @@ import { switchMap } from 'rxjs';
 import { Country } from '../../interfaces/country';
 
 @Component({
-  selector: 'app-country-page',
+  selector: 'countries-country-page',
   templateUrl: './country-page.component.html',
   styles: ``,
 })

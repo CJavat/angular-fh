@@ -1,1 +1,21 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes Numéricos" class="p-1">
+  <p>Pipes incluidos en Angular - Usualmente en el Common Module</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="Del Presente Año">
+      {{ totalSells + 1235 | number : "1.2-2" }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Brutas" subheader="Del Presente Año">
+      {{ totalSells | currency : "" : "symbol-narrow" : "1.4-4" }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="Ganancias Porcentual" subheader="Del Presente Año">
+      {{ precent | percent : "1.2-2" }}
+    </p-card>
+  </div>
+</div>

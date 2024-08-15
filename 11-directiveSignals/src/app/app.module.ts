@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsModule } from './products/products.module';
 import { SharedModule } from './shared/shared.module';
+import { SignalsModule } from './signals/signals.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ProductsModule],
+  imports: [BrowserModule, AppRoutingModule, ProductsModule, SignalsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
